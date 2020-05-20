@@ -4,7 +4,11 @@ DATE := $(shell date "+%Y%m%d-%H%M")
 
 CODE := 2.0
 
-ZIP := $(NAME)-$(CODE)-$(DATE).zip
+KERNELVERSION := $(cat ../Makefile | grep VERSION | head -n 1 | sed "s|.*=||1" | sed "s| ||g")
+
+KERNELPATCHLEVEL := $(cat ../Makefile | grep PATCHLEVEL | head -n 1 | sed "s|.*=||1" | sed "s| ||g")
+
+ZIP := $(NAME)-$(KERNELVERSION)$(KERNELPATCHLEVEL)-$(CODE)-$(DATE).zip
 
 EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md*
 
