@@ -10,7 +10,7 @@ do.cleanup=1
 do.cleanuponabort=1
 device.name1=
 device.name2=
-s upported.versions=
+supported.versions=
 supported.patchlevels=
 '; }
 
