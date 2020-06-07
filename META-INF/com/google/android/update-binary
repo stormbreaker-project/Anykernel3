@@ -350,6 +350,13 @@ fi;
 debugging;
 restore_env;
 
+# AGNi Wired Earphone Analog Amplification boost thanks to agni kernel dev
+ui_print " " "Finishing up..." " ";
+$bb mount -t auto /dev/block/by-name/vendor /vendor;
+$bb sed -i '/HPHL Volume/c\    <ctl name="HPHL Volume" value="16" />' /vendor/etc/mixer_paths.xml;
+$bb sed -i '/HPHR Volume/c\    <ctl name="HPHR Volume" value="16" />' /vendor/etc/mixer_paths.xml;
+$bb umount /vendor;
+
 if [ "$(file_getprop anykernel.sh do.cleanup)" == 1 ]; then
   ui_print " - Cleaning up...";
   cleanup;
