@@ -5,14 +5,14 @@
 # begin properties
 properties() { '
 kernel.string=StormBreaker Kernel
-maintainer.string1=Starlight TG:@star2834
+maintainer.string1=ItsVixano TG:@GiovanniRN5
 maintainer.string2=Saalim Quadri, Team StormBreaker Head
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=vince
+device.name1=ysl
 supported.versions=
 supported.patchlevels=
 '; } # end properties

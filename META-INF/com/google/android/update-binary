@@ -432,7 +432,7 @@ ui_print " ";
 ui_print "- Introducing $(file_getprop anykernel.sh kernel.string)";
 ui_print " ";
 ui_print "- Maintainer: $(file_getprop anykernel.sh maintainer.string1 )";
-ui_print "- Co-Maintainer: $(file_getprop anykernel.sh maintainer.string2)";
+ui_print "- Founder: $(file_getprop anykernel.sh maintainer.string2)";
 ui_print "=======================================";
 ui_print "AnyKernel3 by osm0sis @ xda-developers";
 ui_print "=======================================";
