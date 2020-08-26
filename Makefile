@@ -2,7 +2,7 @@ NAME ?= Stormbreaker
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
-DEVICE := $(shell echo $DEVICE)
+DEVICE := $(shell echo "${DEVICE}")
 
 KERNELVERSION := $(shell cat ../Makefile | grep VERSION | head -n 1 | sed "s|.*=||1" | sed "s| ||g")
 
