@@ -8,8 +8,8 @@ do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=X00P
-device.name2=X00PD
+device.name1=X01A
+device.name2=X01AD
 supported.versions=
 supported.patchlevels=
 '; }
