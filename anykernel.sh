@@ -5,14 +5,14 @@
 # begin properties
 properties() { '
 kernel.string=StormBreaker Kernel
-maintainer.string1=Forenche TG:@NubSusCat
+maintainer.string1=Forenche TG:@rakoool
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=surya
-device.name2=karna
-supported.versions=10-11
+device.name1=picasso
+device.name2=Picasso
+supported.versions=11
 '; } # end properties
 
 # shell variables
