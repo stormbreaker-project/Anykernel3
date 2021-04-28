@@ -7,12 +7,6 @@ write() {
  echo "$2" > "$1" 2> /dev/null
 }
 
-## Sched changes
-write /sys/devices/system/cpu/cpufreq/schedutil/up_rate_limit_us 1500
-write /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us 1000
-write /sys/devices/system/cpu/cpufreq/schedutil/hispeed_freq 1401600
-write /sys/devices/system/cpu/cpufreq/schedutil/hispeed_load 85
-
 ## Disable SchedTune by writing 0 to its nodes
 write /proc/sys/kernel/sched_boost 0
 write /dev/stune/nnapi-hal/schedtune.boost 0
@@ -22,12 +16,6 @@ write /dev/stune/schedtune.boost 0
 ## Ktweat script
 # Source: https://github.com/tytydraco/KTweak
 # Branch: Latency
-
-# Duration in nanoseconds of one scheduling period
-SCHED_PERIOD="$((1 * 1000 * 1000))"
-
-# How many tasks should we have at a maximum in one scheduling period
-SCHED_TASKS="10"
 
 # Limit max perf event processing time to this much CPU usage
 write /proc/sys/kernel/perf_cpu_time_max_percent 3
@@ -41,15 +29,6 @@ write /proc/sys/kernel/sched_child_runs_first 1
 
 # Preliminary requirement for the following values
 write /proc/sys/kernel/sched_tunable_scaling 0
-
-# Reduce the maximum scheduling period for lower latency
-write /proc/sys/kernel/sched_latency_ns "$SCHED_PERIOD"
-
-# Schedule this ratio of tasks in the guarenteed sched period
-write /proc/sys/kernel/sched_min_granularity_ns "$((SCHED_PERIOD / SCHED_TASKS))"
-
-# Require preeptive tasks to surpass half of a sched period in vmruntime
-write /proc/sys/kernel/sched_wakeup_granularity_ns "$((SCHED_PERIOD / 2))"
 
 # Reduce the frequency of task migrations
 write /proc/sys/kernel/sched_migration_cost_ns 5000000
