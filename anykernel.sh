@@ -4,14 +4,14 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=StormBreaker Kernel by CryllicBuster273
+kernel.string=StormBreaker Kernel
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=avicii
-device.name2=Nord
-device.name3=OnePlusNord
+device.name1=billie
+device.name2=Nord10
+device.name3=OnePlusNord10
 device.name4=
 device.name5=
 supported.versions=
