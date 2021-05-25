@@ -2,13 +2,15 @@ NAME ?= Stormbreaker
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
-CODE := beta
+DEVICE := X01AD
 
 KERNELVERSION := $(shell cat ../Makefile | grep VERSION | head -n 1 | sed "s|.*=||1" | sed "s| ||g")
 
 KERNELPATCHLEVEL := $(shell cat ../Makefile | grep PATCHLEVEL | head -n 1 | sed "s|.*=||1" | sed "s| ||g")
 
-ZIP := $(NAME)-$(KERNELVERSION).$(KERNELPATCHLEVEL)-$(CODE)-$(DATE).zip
+VERSION := 0.1
+
+ZIP := $(NAME)-$(KERNELVERSION).$(KERNELPATCHLEVEL)-$(DEVICE)-$(DATE)-$(VERSION).zip
 
 EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md*
 
