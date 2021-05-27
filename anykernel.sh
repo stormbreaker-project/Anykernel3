@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=StormBreaker Kernel by CryllicBuster273
+kernel.string=StormBreaker Kernel by Sreekanth
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
