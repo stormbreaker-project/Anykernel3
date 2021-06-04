@@ -5,7 +5,7 @@
 # begin properties
 properties() { '
 kernel.string=StormBreaker Kernel
-maintainer.string1=Murtaza Piplod TG:@mtpiplod XDA:@murtaza1326
+maintainer.string1=Jash TG: @brucetech
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
