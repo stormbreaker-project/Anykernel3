@@ -26,8 +26,8 @@ $(ZIP):
 
 
 clean:
+	@rm -vf dtbo.img
 	@rm -vf *.zip*
 	@rm -vf zImage
 	@rm -vf Image*
 	@echo "Cleaned Up."
-
