@@ -11,8 +11,8 @@ do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=
-device.name2=
+device.name1=ginkgo
+device.name2=willow
 supported.versions=
 supported.patchlevels=
 '; } # end properties
