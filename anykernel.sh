@@ -5,14 +5,16 @@
 # begin properties
 properties() { '
 kernel.string=StormBreaker Kernel
-maintainer.string1=Saalim Quadri, Team StormBreaker
+maintainer.string1=iamlordutkarsh
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=
-device.name2=
+device.name1=RMX1911
+device.name2=RMX2030
+device.name3=RMX1925
+device.name4=RMX1927
 supported.versions=
 supported.patchlevels=
 '; } # end properties
@@ -36,7 +38,7 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 ## AnyKernel boot install
 dump_boot;
 
-
+flash_dtbo;
 write_boot;
 ## end boot install
 
