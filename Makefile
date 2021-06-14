@@ -1,4 +1,4 @@
-NAME ?= Stormbreaker
+NAME ?= StormBreaker
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
@@ -26,8 +26,8 @@ $(ZIP):
 
 
 clean:
+	@rm -vf dtbo.img
 	@rm -vf *.zip*
 	@rm -vf zImage
 	@rm -vf Image*
 	@echo "Cleaned Up."
-
