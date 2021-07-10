@@ -8,7 +8,7 @@ KERNELVERSION := $(shell cat ../Makefile | grep VERSION | head -n 1 | sed "s|.*=
 
 KERNELPATCHLEVEL := $(shell cat ../Makefile | grep PATCHLEVEL | head -n 1 | sed "s|.*=||1" | sed "s| ||g")
 
-VERSION := 0.3
+VERSION := 0.4
 
 ZIP := $(NAME)-$(DEVICE)-beta-$(DATE)-$(VERSION).zip
 
