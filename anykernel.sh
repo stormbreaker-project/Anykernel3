@@ -5,7 +5,7 @@
 # begin properties
 properties() { '
 kernel.string=StormBreaker Kernel
-maintainer.string1=Forenche TG:@rakoool
+maintainer.string1=Forenche TG: @GiggaChatCat
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
