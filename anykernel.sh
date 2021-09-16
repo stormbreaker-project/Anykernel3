@@ -4,8 +4,8 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=StormBreaker Kernel
-maintainer.string1=Forenche TG: @GiggaChatCat
+kernel.string=StormBreaker Kernel for Surya
+maintainer.string1=Forenche TG: @GigaChadCat
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
