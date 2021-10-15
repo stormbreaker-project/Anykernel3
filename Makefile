@@ -8,8 +8,6 @@ KERNELVERSION := $(shell cat ../Makefile | grep VERSION | head -n 1 | sed "s|.*=
 
 KERNELPATCHLEVEL := $(shell cat ../Makefile | grep PATCHLEVEL | head -n 1 | sed "s|.*=||1" | sed "s| ||g")
 
-VERSION := x-alpha
-
 ZIP := $(NAME)-$(KERNELVERSION).$(KERNELPATCHLEVEL)-$(DEVICE)-$(DATE)-$(VERSION).zip
 
 EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md*
