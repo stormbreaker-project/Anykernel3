@@ -10,7 +10,7 @@ KERNELPATCHLEVEL := $(shell cat ../Makefile | grep PATCHLEVEL | head -n 1 | sed 
 
 ZIP := $(NAME)-$(KERNELVERSION).$(KERNELPATCHLEVEL)-$(DEVICE)-$(DATE)-$(VERSION).zip
 
-EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md*
+EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md* *.zip
 
 normal: $(ZIP)
 
