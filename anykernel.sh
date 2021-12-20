@@ -19,6 +19,7 @@ supported.versions=10-12
 block=/dev/block/bootdevice/by-name/boot;
 is_slot_device=0;
 ramdisk_compression=auto;
+patch_vbmeta_flag=auto;
 
 
 ## AnyKernel methods (DO NOT CHANGE)
@@ -30,4 +31,3 @@ split_boot;
 flash_boot;
 flash_dtbo;
 ## end install
-
