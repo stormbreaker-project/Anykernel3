@@ -12,7 +12,7 @@ do.cleanup=1
 do.cleanuponabort=1
 device.name1=surya
 device.name2=karna
-supported.versions=10-12
+supported.versions=10-13
 '; } # end properties
 
 # shell variables
