@@ -4,13 +4,7 @@ DATE := $(shell date "+%Y%m%d-%H%M")
 
 DEVICE := X00P
 
-KERNELVERSION := $(shell cat ../Makefile | grep VERSION | head -n 1 | sed "s|.*=||1" | sed "s| ||g")
-
-KERNELPATCHLEVEL := $(shell cat ../Makefile | grep PATCHLEVEL | head -n 1 | sed "s|.*=||1" | sed "s| ||g")
-
-VERSION := 0.1
-
-ZIP := $(NAME)-$(KERNELVERSION).$(KERNELPATCHLEVEL)-$(DEVICE)-$(DATE)-$(VERSION).zip
+ZIP := $(NAME)--$(DEVICE)-$(DATE).zip
 
 EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md*
 
